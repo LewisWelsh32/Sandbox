@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week Three Subject Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- This is an internal style block of code to override some of the bootstrap style values-->
+    <style type="text/css">
+        .navbar .nav > li > a {
+            color: white; /*nav color*/
+            text-shadow: none;
+            background-color: red;
+        }
+        .navbar .nav > li > a:hover {
+            color:white;
+            background: #000000;
+        }
+        .myclass {
+            color: #f0f8ff;
+            background-color: #f0f8ff;
+        }.row1Styles {
+            background-color: #f0f8ff; 
+            min-height: 200px;
+        }
+        .row2Styles {
+            background-color: pink; 
+            min-height: 200px;
+        }
+        .col1Styles {
+            background-color: #f0f8ff; 
+            height: 450px;
+            border-width: 2px; border-color: black; border-style: solid;
+        }
+        .col2Styles {
+            background-color: grey ; 
+            height: 400px;
+            border-width: 2px; border-color: white; border-style: solid;
+            margin-left: 80px;
+        }
+    </style>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://seattleacademy.org/">Seattle Academy</a>
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Main page</a></li>
+                <li><a href="lesson3.html">Third page</a></li>
+                <li class="active"><a href="lesson4.html">Fourth page</a></li>
+            </ul>
+        </div>
+    </nav>
+<!--  The container class from bootstrap is a width of 1000 pixels. 
+  It has all the padding other values to help make the content look its best in many different browsers.-->
+  <div class="container">
+    <!--  navbar class has many types, this is the first one you can use. we will explore other in class or video lesson-->
+    
+    <!--     An example of the many classes (another identification element) that are inside the bootstrap library-->
+    <div class="alert alert-danger">
+        This site is under development!
+    </div>
+    <h1>Typical header</h1>
+    <!--  You can do columns by putting spans inside of rows. -->
+    <div class="row">
+        <div class="col-sm-3">
+            <p>This is our first span3 div (300 px width) in our row. This span has many values (like padding and margins) to make the text look good inside. </p>
+        </div>
+        <div class="col-sm-4 myclass">
+            <p>This is our first span9 div (900 px width) in our row. <br>
+                It is very important to remember how many pixels you have in the outside divs like container to be sure these divs will fit in a single row.</p>
+            </div>
+            <div class="col-sm-3">
+                <p>This is our first span9 div (900 px width) in our row. <br>
+                    It is very important to remember how many pixels you have in the outside divs like container to be sure these divs will fit in a single row.</p>
+                </div>
+            </div>
+ <div class="row row1Styles">
+        <div class="col-sm-6 col1Styles">
+            <p>Put slideshow here</p>
+               <!--    Carousel of things like images are popular on sites.-->
+            <h3>A Carousel of Images</h3>
+            <p>Use the code from this section of the page to put a cool carousel of items, usually images.</p>
+            <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="active item"><p>First Image</p><img src="img1.jpg" width="600" height="400"></div>
+                    <div class="item"><p>Second</p><img src="img2.jpg" width="600" height="400"></div>
+                    <div class="item"><p>Third</p><img src="img3.jpg" width="600" height="400"></div>
+                  </div>
+                  <!-- Carousel nav -->
+                  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>  <!-- closing carasole div -->
+        </div>  <!-- closing column -->
+        <div class="col-sm-5 col2Styles">
+            <p>Put model button here</p>
+            <button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+        </div> <!-- closing column -->
+    </div>  <!-- closing row -->
+    
+    <div class="row row2Styles">
+        <div class="col-sm-6 col1Styles">
+            <p>Find any other bootstrap feature and paste it here</p>
+        </div>  <!-- closing column -->
+        <div class="col-sm-5 col2Styles">
+            <p>Find any other bootstrap feature and paste it here</p>
+        </div>  <!-- closing column -->
+    </div>  <!-- closing row -->
+        </div> <!-- closing container -->
+    </body>
+    </html>
